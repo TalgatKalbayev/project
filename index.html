@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./paper.css">
+    <link rel="stylesheet" href="./nes.css">
+    <link rel="stylesheet" href="./animate.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>VirtualLab№2</title>
+</head>
+<body>
+    <div id="first-page" class="first-page animate__animated ">
+        <h1 class="title lab">№ 2 виртуалды зертханалық жұмыс</h1>
+        <h2 class="title">Google Drive-ты компьютерге орнату. 
+            <br>Google Drive ішіндегі кірістер мен шығыстар кестесі.
+        </h2>
+        <div class="row center">
+            <div class="col-6 col">
+              <button id="first-button" onclick="secondPage()" class="btn-block"><p class="p-0">Бастау</p></button>
+            </div>
+          </div>
+    </div>
+    <div id="second-page" class="second-page center animate__animated">
+        <div style="position: relative; width: 800px;">
+            <div id="paper" class="container paper" style="text-align: center; background-color: transparent;">
+                <h1 class="title lab"><p>Кіріспе</p></h1>
+                <div style="width: 100%;" class="d-flex center">
+                    <img id="g-disk-logo"  class="g-disk-logo animate__animated " src="./img/Google_Drive_logo_(2014-2020).svg.png" alt="">
+                    <p>
+                       Google Drive-бұл Google әзірлеген файлдарды сақтау, өңдеу және синхрондау қызметі. Оның мүмкіндіктеріне файлдарды желіде сақтау, ортақ пайдалану және бірлесіп өңдеу кіреді.
+                    </p>
+                </div>
+                <button onclick="thirdPage()" style="background-color: transparent; width: 200px; margin-top: 20px;" type="button" class="btn-block"><p class="p-0">Әрі қарай</p></button>
+            </div>
+        </div>
+    </div>
+    <div id="third-page" class="third-page center animate__animated">
+        <ul class="menu">
+            <li onclick="selectPage('menu-el-1')" id="menu-el-1" class="menu-el menu-el-active">Орнату</li>
+            <li onclick="selectPage('menu-el-2')" id="menu-el-2"  class="menu-el">Мүмкіндіктер</li>
+            <li onclick="selectPage('menu-el-3')" id="menu-el-3"  class="menu-el">Кесте құру</li>
+        </ul>
+        <div class="content-block">
+            <div class="content1" id="content1">
+                <p class="content-title">
+                    Орнату
+                </p>
+                <p>
+                    Компьютерге Google drive орнату үшін сізге қажет:
+                </p>
+                <div style="display: flex; flex-wrap: wrap">
+                    <div>
+                        <ul>
+                            <li>1) <a target="_blank" href="https://www.google.com/drive/download/">Сілтеме</a> бойыншы өту</li>
+                        </ul>
+                        <img class="url-inputing" src="./img/urlinputing.gif" alt="">
+                    </div>
+                    <div>
+                        <ul>
+                            <li>2)"Компьютерге арналған дискіні жүктеу" батырмасын басыңыз</li>
+                        </ul>
+                        <img class="download-clicking" src="./img/download-click.gif" alt="">
+                    </div>
+                    <div>
+                        <ul>
+                            <li>3) Жүктеулер папкасында орнатушыны іске қосыңыз</li>
+                        </ul>
+                        <img class="install-clicking" src="./img/installing.gif" alt="">
+                    </div>
+                    <div>
+                        <ul>
+                            <li>4) Орнату процесін аяқтаңыз</li>
+                        </ul>
+                        <img class="install-clicking" src="./img/Screenshot_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content1" id="content2" style="padding: 0 30px; display: none;" >
+                <p class="content-title">
+                    Мүмкіндіктер
+                </p>
+                <p>
+                  Құжаттар, кестелер және презентациялар
+ Негізгі мақала: Google Docs
+ Google Docs, sheets және презентациялар-бұл Google Drive-пен біріктірілген кеңсе веб-Қосымшаларының ақысыз жиынтығы. Оның көмегімен құжаттарды онлайн режимінде жасауға және өңдеуге және олармен нақты уақыт режимінде басқа пайдаланушылармен бірге жұмыс істеуге болады. 2012 жылдың қазан айынан бастап бұл атаулар ресми түрде мәтіндік процессор, электрондық кесте редакторы және презентация қосымшасы үшін қолданылады. Барлық үш қызмет веб-қосымшалар, офлайн қолдауы бар Chrome қосымшалары, сондай-ақ Android және iOS мобильді қосымшалары түрінде қол жетімді және Microsoft Office форматтарын қолдайды.
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="height: 250px;" src="./img/google-docs-sheets-and-slides_fbrz.jpg" alt="">
+                </div>
+            </div>
+            <div class="content1" id="content3" style="padding: 0 30px; display: none;" >
+                <p class="content-title">
+                    Кесте құру
+                </p>
+                <div>
+                    <p>1) <a target="_blank" href="https://docs.google.com/spreadsheets/">Сілтеме</a> бойыншы өту</p>
+                </div>
+                <div>
+                    <p>2) Шығындар мен кірістер кестесін құрудың 2 әдісі бар</p>
+                    <div style="display: flex">
+                        <div class="card" style="padding: 5px; margin-right: 20px; width: 540px; display: flex; flex-direction: column; justify-content: space-between;">
+                            <p>бос кестені қолмен құру және функцияларды пайдалану</p>
+                            <img style="height: 250px;" src="./img/Screenshot_2.png" alt="">
+                        </div>
+                        <div class="card" style="padding: 5px; width: 540px; display: flex; flex-direction: column; justify-content: space-between;">
+                            <p>Немесе дайын шаблонды қолданыңыз және тек мәндерді енгізіңіз</p>
+                            <img style="height: 250px;" src="./img/Screenshot_3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: right;">
+                    <button class="btn-block" style="width: 100px; margin-top: 20px; background-color: transparent; color: azure;"><p class="p-0">Келесі</p></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
