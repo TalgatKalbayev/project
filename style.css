@@ -1,0 +1,154 @@
+body{
+    overflow: hidden;
+}
+
+p{
+    font-size: 25px;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.g-disk-logo{
+    height: 50px;
+    margin-right: 25px;
+}
+
+.center{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.lab{
+    font-weight: 800;
+}
+
+.first-page{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 999;}
+
+.second-page{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    z-index: -1;
+    display: none;
+    background-color: blueviolet;
+}
+
+.p-0{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-block{
+    width: 500px;
+}
+
+.wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hover-active{
+    transform: translate3d(0,2px,0);
+    box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 30%);
+}
+
+.paper{
+    background-image: url(./img/White-Paper-No-Background.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    border: none;
+    box-shadow: none;
+    height: 700px;
+    padding: 60px;
+    padding: 0px 210px;
+}
+
+.third-page{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    z-index: -1;
+    display: none;
+    background-color: blueviolet;
+    justify-content: space-between;
+}
+
+.menu-el{
+    font-size: 40px;
+}
+
+.menu-el:hover{
+    color: azure;
+}
+
+.menu-el-active{
+    color: azure;
+    margin-left: 20px;
+}
+
+.content-title{
+    font-size: 60px;
+}
+
+.content-block{
+    min-width: 400px;
+    text-align: center;
+    font-size: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+    justify-content: center;
+    display: flex;
+    padding-right: 100px;
+}
+
+.content-block::-webkit-scrollbar {
+    display: none;
+  }
+
+.url-inputing{
+    height: 260px;
+    border: none;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.download-clicking{
+    height: 300px;
+    border: none;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.install-clicking{
+    height: 240px;
+}
+
+.hidden{
+    display: none;
+}
